@@ -24,7 +24,7 @@
             </div>
             <div>
                 <label for="username" id="username" class="md-2 block uppercase text-gray-500 font-bold">Usuario</label>
-                <input type="text" id="username" name="username" placeholder="Tu nombre de usuario" class="borde p-3 w-full rounded-lg 
+                <input type="text" id="username" name="username" placeholder="Tu nombre de usuario" class="borde p-3 w-full rounded-lg
                 @error('username')
                     border-red-500
                 @enderror" value="{{old('username')}}">
@@ -54,7 +54,7 @@
             </div>
             <div>
                 <label for="password_confirmation" id="password_confirmation" class="md-2 block uppercase text-gray-500 font-bold">Confirmacion de Password</label>
-                <input type="password_confirmation" id="password_confirmation" name="password_confirmation" placeholder="Repite tu Password" class="borde p-3 w-full rounded-lg" value="{{old('password_confirmation')}}">
+                <input type="password" id="password_confirmation" name="password_confirmation" placeholder="Repite tu Password" class="borde p-3 w-full rounded-lg" value="{{old('password_confirmation')}}">
             </div>
             <input type="submit" name="submit" value="Crear Cuenta" class="bg-sky-600 hover:bg-sky-700 transitions-colors cursor-pointer uppercase font-bold w-full p-3 text-white rounded-lg mt-5">
         </form>
